@@ -22,6 +22,11 @@ class Form extends React.Component{
         onChange={this.onInputChange}
         placeholder="Adicione uma tarefa"
       />
+      <select>
+        <option value="Alta">Alta</option>
+        <option value="Media">Media</option>
+        <option value="Baja">Baja</option>
+      </select>
         <button type="submit">+</button>
       </form>
     )
