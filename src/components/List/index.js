@@ -3,11 +3,11 @@ import Task from '../Task';
 
 const List = ({todos, remove}) =>{
   return(
-    <ul>
+    <ol>
       {todos.map((todo, index) =>{
         return(<Task todo={todo} remove={remove} key={index}></Task>)
       })}
-    </ul>
+    </ol>
   )
 };
 

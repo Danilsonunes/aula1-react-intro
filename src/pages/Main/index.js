@@ -11,14 +11,15 @@ class Main extends React.Component {
     }
   }
 
-  addTodo(event, val){
+  addTodo(event, val, priority){
     event.preventDefault();
 
-    const todo = { text: val };
+    const todo = { text: val, pri: priority };
 
     this.state.data.push(todo);
 
     this.setState({data: this.state.data});
+    console.log(todo)
   };
 
   removeTodo(event,value){
@@ -29,6 +30,7 @@ class Main extends React.Component {
     });
 
     this.setState({data: remainder})
+    
   }
 
   render() {
